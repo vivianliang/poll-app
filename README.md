@@ -1,5 +1,13 @@
 # poll-app
 
+Create db (first time)
+```
+createdb polldb
+```
+Set DATABASE_URL
+```
+export DATABASE_URL=postgresql://vivianliang@localhost:5432/pollsdb
+```
 Run locally
 ```
 python manage.py runserver
@@ -13,8 +21,7 @@ Create admin
 python manage.py createsuperuser
 ```
 
-Heroku
-----
+##Heroku
 
 Deploy to heroku
 ```
@@ -30,3 +37,7 @@ Django shell
 ```
 heroku run python manage.py shell
 ```
+
+### Heroku Set up
+https://devcenter.heroku.com/articles/getting-started-with-django
+https://devcenter.heroku.com/articles/heroku-postgresql
